@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    font-size: 14vw;
+    -webkit-tap-highlight-color: transparent;
+}
+
+// .van-tabs {
+//     margin-top:46px
+// }
+.van-nav-bar {
+    background: #fefefe;
+    z-index: 99;
+}
+
+.gedan-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 50px;
+
+    .item {
+        width: 48%;
+        margin-bottom: 5px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            opacity: 0.9;
+        }
+
+        div {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            font-size: 13px;
+            color: #666;
+        }
+
+        span {
+            position: absolute;
+            top: 3px;
+            right: 4px;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+
+    .itemgedan {
+        width: 33%;
+    }
+
+}
+
+.list-title {
+    .iconfont {
+        font-size: 20px;
+    }
+
+    font-size: 16px;
+    color: #111;
+    margin: 15px 0 0 15px;
+
+    .txt {
+        color: #777;
+        font-size: 14px;
+    }
+}
+
+.listbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+    background: rgba(0, 0, 0, 0.005);
+
+    .left {
+        width: 75%;
+        padding-left: 18px;
+
+        .name {
+            font-size: 16px;
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #444;
+        }
+
+        .geshou {
+            font-size: 12px;
+            color: #888;
+
+            .sq {
+                padding: 0 2px;
+                margin-right: 5px;
+                border: 0.5px solid #df6d60;
+                color: #df6d60;
+                border-radius: 2px;
+                font-size: 8px;
+                line-height: 8px;
+            }
+        }
+    }
+
+    .log {
+        .icon-MV {
+            cursor: pointer;
+            color: #dd6d60;
+        }
+
+        span {
+            cursor: pointer;
+            margin-right: 16px;
+            color: #666;
+            font-size: 22px;
+        }
+    }
+}
+
+.fanhui {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    padding: 12px 0 0 3px;
+    font-size: 20px;
+    background: #fff;
+}
+
+.gedanwrp .van-icon-arrow-left {
+    font-size: 20px
+}
+
+.my-nav {
+    position: fixed;
+    top: 0;
+    height: 30px;
+    background: #fff;
+    width: 100%;
+    z-index: 3;
+    font-size: 16px;
+    padding: 5px;
+
+    span {
+        font-size: 26px;
+        margin-right: 15px;
+    }
+
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    height: 30%;
+    box-sizing: border-box;
+}
+
+.iconbox {
+    margin: 25px 0;
+    //    border-bottom: 1px solid #eee;
+
+    >div {
+        line-height: 50px;
+        padding-left: 15px;
+    }
+
+    .iconfont {
+        font-size: 25px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+.user .top {
+
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img {
+        margin-left: 25px;
+
+        img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .btn {
+        margin-right: 25px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+}
+
+.logiconbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    // border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+
+    .iconfont {
+        font-size: 26px;
+        background-color: #ff2121;
+        color: #fff;
+        padding: 8px;
+        border-radius: 50%;
+        font-weight: 700;
+    }
+
+    .icon-item {
+        flex: 1;
+        text-align: center;
+
+        p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    }
+
+}

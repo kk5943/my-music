@@ -1,32 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+   
+   <router-view></router-view>
   </div>
 </template>
-
+<script>
+export default {
+  created(){
+      const usinfo= window.sessionStorage.getItem('userinfo')
+      this.$store.state.user.profile.nickname =  window.sessionStorage.getItem('username')
+      this.$store.state.user.profile.avatarUrl=  window.sessionStorage.getItem('userlog')
+      this.$store.state.user.userId=window.sessionStorage.getItem('userid')
+      this.$store.state.user.type=window.sessionStorage.getItem('type')
+      
+    console.log(this.$store.state.user)
+  }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#app{
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
 }
 </style>
